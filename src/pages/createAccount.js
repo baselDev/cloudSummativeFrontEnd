@@ -54,7 +54,6 @@ function SignUpForm() {
         if (formCompleted) {
             try {
                 const response = await fetch('https://myapp-izysq3kmoa-uc.a.run.app/createAccount', {
-                    mode: 'no-cors',
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

@@ -25,7 +25,6 @@ const ViewBookings = () => {
       try {
         const requestUrl = "https://myapp-izysq3kmoa-uc.a.run.app/viewEvents?id=" + location.state.data["user-id"] + "&userType=" + location.state.userType;
         const response = await fetch(requestUrl, {
-          mode: 'no-cors',
           method: 'GET',
         });
 

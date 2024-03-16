@@ -25,7 +25,6 @@ function Login() {
     
         try {
             const response = await fetch("https://myapp-izysq3kmoa-uc.a.run.app/login", {
-                mode: 'no-cors',
                 method: 'POST',
                 headers: headers,
                 body: JSON.stringify(requestBody)
