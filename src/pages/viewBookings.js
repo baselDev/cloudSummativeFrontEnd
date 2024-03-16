@@ -23,7 +23,7 @@ const ViewBookings = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const requestUrl = "http://13.40.187.160:8000/viewEvents?id=" + location.state.data["user-id"] + "&userType=" + location.state.userType;
+        const requestUrl = "https://myapp-izysq3kmoa-uc.a.run.app/viewEvents?id=" + location.state.data["user-id"] + "&userType=" + location.state.userType;
         const response = await fetch(requestUrl, {
           mode: 'no-cors',
           method: 'GET',

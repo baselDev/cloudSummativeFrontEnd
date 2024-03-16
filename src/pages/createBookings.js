@@ -10,7 +10,7 @@ const CreateBooking = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const requestUrl = "http://13.40.187.160:8000/getWalkers";
+                const requestUrl = "https://myapp-izysq3kmoa-uc.a.run.app/getWalkers";
                 const response = await fetch(requestUrl, {
                     mode: 'no-cors',
                     method: 'GET',
@@ -75,7 +75,7 @@ const CreateBooking = () => {
             'Content-Type': 'application/json'
         };
         try {
-            const response = await fetch("http://13.40.187.160:8000/addEvent", {
+            const response = await fetch("https://myapp-izysq3kmoa-uc.a.run.app/addEvent", {
                 mode: 'no-cors',
                 method: 'POST',
                 headers: headers,

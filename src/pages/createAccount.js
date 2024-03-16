@@ -53,7 +53,7 @@ function SignUpForm() {
 
         if (formCompleted) {
             try {
-                const response = await fetch('http://13.40.187.160:8000/createAccount', {
+                const response = await fetch('https://myapp-izysq3kmoa-uc.a.run.app/createAccount', {
                     mode: 'no-cors',
                     method: 'POST',
                     headers: {
